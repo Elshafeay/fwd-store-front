@@ -15,9 +15,7 @@ It features the use of **Typescript**, **PostgreSQL**, **Jasmine** and **Eslint*
 
 ## Prerequisites
 Your machine must have the following installed on it:
-- [Postgres](https://www.postgresql.org/download/)
-- [Node/NPM](https://nodejs.org/en/download/)
-- [Typescript](https://www.npmjs.com/package/typescript)
+- [Node/NPM](https://nodejs.org/en/download/) (v16 or higher)
 - [Docker](https://www.docker.com/products/docker-desktop)
 
 ## Instructions
@@ -37,6 +35,11 @@ npm run migrate:up
 ### 3. Starting the project
 ```
 npm start
+```
+
+### 4. Running the tests
+```
+npm test
 ```
 
 Any by now you should be able to go to `localhost:3000` to test that everything is working as expected.
