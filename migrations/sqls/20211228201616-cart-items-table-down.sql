@@ -1,0 +1,1 @@
+Drop TABLE "cart_items";

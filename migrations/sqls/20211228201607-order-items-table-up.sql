@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS "order_items" (
+  "id" SERIAL,
+  "name" VARCHAR(255) NOT NULL,
+  "order_id" INTEGER REFERENCES "orders" ("id") ON DELETE NO ACTION ON UPDATE CASCADE,
+  "product_id" INTEGER REFERENCES "products" ("id") ON DELETE NO ACTION ON UPDATE CASCADE,
+  "price" FLOAT,
+  "quantity" INTEGER,
+  "created_at" TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY ("id")
+);

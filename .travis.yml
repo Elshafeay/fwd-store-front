@@ -1,0 +1,11 @@
+services:
+  - docker
+language: node_js
+node_js:
+  - 16
+before_install:
+- docker-compose up
+install:
+  - npm install
+script:
+  - npm run test:ci
