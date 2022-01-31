@@ -81,16 +81,3 @@ GET `/cart`, Gets your cart details (any items in it)                           
 POST `/cart/items`, Adds/increases-the-quantity-of an item in your cart             [Authentication Required]
 DELETE `/cart/items/:id`, Removes an item from your cart                            [Authentication Required]
 DELETE `/cart/items`, Empties Your Cart                                             [Authentication Required]
-
-
-## NOTES
-
-- Sequelize
-- Async/Await or Promises have catch statements.
-- Contain one file in the model folder per table in the database.
-- Postman
-
-
-## TODO
-- Every (database-action/endpoint) must have a passing test.
-- README.md
